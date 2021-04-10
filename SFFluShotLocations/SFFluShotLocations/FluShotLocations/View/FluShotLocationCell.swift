@@ -8,4 +8,7 @@
 import UIKit
 
 final class FluShotLocationCell: UITableViewCell {
+    @IBOutlet weak var facilityNameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var eligibilityLabel: UILabel!
 }

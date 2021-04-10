@@ -21,15 +21,56 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Wlg-kt-XvD">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" rowHeight="150" id="Wlg-kt-XvD" customClass="FluShotLocationCell" customModule="SFFluShotLocations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wlg-kt-XvD" id="CNk-fV-JhX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYz-xG-yB3" userLabel="Facility Name Label">
+                                                    <rect key="frame" x="28" y="19" width="358" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeU-r4-k5Y" userLabel="Eligibility Label">
+                                                    <rect key="frame" x="28" y="77" width="358" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-N8-jWK" userLabel="Address Label">
+                                                    <rect key="frame" x="28" y="48" width="358" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fum-N8-jWK" firstAttribute="top" secondItem="TYz-xG-yB3" secondAttribute="bottom" constant="8" id="GRW-FR-HPQ"/>
+                                                <constraint firstItem="TYz-xG-yB3" firstAttribute="top" secondItem="CNk-fV-JhX" secondAttribute="topMargin" constant="8" id="NZd-wM-R83"/>
+                                                <constraint firstItem="KeU-r4-k5Y" firstAttribute="leading" secondItem="CNk-fV-JhX" secondAttribute="leadingMargin" constant="8" id="P39-uz-sXg"/>
+                                                <constraint firstItem="Fum-N8-jWK" firstAttribute="leading" secondItem="CNk-fV-JhX" secondAttribute="leadingMargin" constant="8" id="QlF-0a-7FL"/>
+                                                <constraint firstItem="TYz-xG-yB3" firstAttribute="leading" secondItem="CNk-fV-JhX" secondAttribute="leadingMargin" constant="8" id="coa-Gk-AEG"/>
+                                                <constraint firstItem="KeU-r4-k5Y" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="CNk-fV-JhX" secondAttribute="bottomMargin" constant="8" id="lYe-sg-TUX"/>
+                                                <constraint firstItem="KeU-r4-k5Y" firstAttribute="top" secondItem="Fum-N8-jWK" secondAttribute="bottom" constant="8" id="pRs-wo-J9x"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TYz-xG-yB3" secondAttribute="trailing" constant="8" id="pw4-oZ-1Gd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KeU-r4-k5Y" secondAttribute="trailing" constant="8" id="saL-h3-MbJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fum-N8-jWK" secondAttribute="trailing" constant="8" id="v5u-jx-AQe"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="Fum-N8-jWK" id="cb8-bN-Rwe"/>
+                                            <outlet property="eligibilityLabel" destination="KeU-r4-k5Y" id="euV-qb-asW"/>
+                                            <outlet property="facilityNameLabel" destination="TYz-xG-yB3" id="HpQ-je-5rr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wzJ-mI-izZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YMB-tR-rXB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,10 +83,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fEL-GM-Ldo"/>
+                    <connections>
+                        <outlet property="tableView" destination="sJB-js-Cv6" id="2GJ-kn-Ut7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="-646"/>
+            <point key="canvasLocation" x="-159.42028985507247" y="-646.20535714285711"/>
         </scene>
     </scenes>
     <resources>
