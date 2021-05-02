@@ -15,3 +15,6 @@ https://data.sfgov.org/resource/yg87-cd6v.json
 ### Practice Goals 2:
 - Diffable datasource
 - Combine
+
+### Demo
+![demo](/ScreenShots/sflocations.gif)
