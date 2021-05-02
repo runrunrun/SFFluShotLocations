@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Flu Shot Locations View Controller-->
+        <!--Facilities View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FluShotLocationsViewController" id="BYZ-38-t0r" customClass="FluShotLocationsViewController" customModule="SFFluShotLocations" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FacilitiesViewController" id="BYZ-38-t0r" customClass="FacilitiesViewController" customModule="SFFluShotLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" rowHeight="150" id="Wlg-kt-XvD" customClass="FluShotLocationCell" customModule="SFFluShotLocations" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="facilityCell" rowHeight="150" id="Wlg-kt-XvD" customClass="FacilityCell" customModule="SFFluShotLocations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wlg-kt-XvD" id="CNk-fV-JhX">
@@ -61,9 +61,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addressLabel" destination="Fum-N8-jWK" id="cb8-bN-Rwe"/>
-                                            <outlet property="eligibilityLabel" destination="KeU-r4-k5Y" id="euV-qb-asW"/>
-                                            <outlet property="facilityNameLabel" destination="TYz-xG-yB3" id="HpQ-je-5rr"/>
+                                            <outlet property="addressLabel" destination="Fum-N8-jWK" id="tFh-XD-Ie9"/>
+                                            <outlet property="eligibilityLabel" destination="KeU-r4-k5Y" id="o2c-Sz-hoQ"/>
+                                            <outlet property="facilityNameLabel" destination="TYz-xG-yB3" id="jm3-Xr-xCC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -90,6 +90,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-159.42028985507247" y="-646.20535714285711"/>
+        </scene>
+        <!--Facility View Controller-->
+        <scene sceneID="MM5-3p-R5j">
+            <objects>
+                <viewController storyboardIdentifier="FacilityViewController" id="7LP-OX-po7" customClass="FacilityViewController" customModule="SFFluShotLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyx-am-i92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CIc-UG-ccQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appointmentCell" rowHeight="134" id="ovX-Ri-vMv" customClass="AppointmentCell" customModule="SFFluShotLocations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="134"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ovX-Ri-vMv" id="0fZ-bK-Med">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-Ua-CT9" userLabel="Date Label">
+                                                    <rect key="frame" x="8" y="19" width="398" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Y-Q9-pYX" userLabel="Eligibility Label">
+                                                    <rect key="frame" x="8" y="47.5" width="398" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tin-Ua-CT9" firstAttribute="leading" secondItem="0fZ-bK-Med" secondAttribute="leading" constant="8" id="Njl-HF-VAS"/>
+                                                <constraint firstItem="Tin-Ua-CT9" firstAttribute="top" secondItem="0fZ-bK-Med" secondAttribute="topMargin" constant="8" id="SEh-fp-yvE"/>
+                                                <constraint firstItem="T3Y-Q9-pYX" firstAttribute="leading" secondItem="0fZ-bK-Med" secondAttribute="leading" constant="8" id="Vqc-Tq-p36"/>
+                                                <constraint firstAttribute="trailing" secondItem="T3Y-Q9-pYX" secondAttribute="trailing" constant="8" id="aZW-Ef-Z1X"/>
+                                                <constraint firstItem="T3Y-Q9-pYX" firstAttribute="top" secondItem="Tin-Ua-CT9" secondAttribute="bottom" constant="8" id="rqz-yL-Ygt"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="T3Y-Q9-pYX" secondAttribute="bottom" constant="8" id="sO1-h6-I6s"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tin-Ua-CT9" secondAttribute="trailing" constant="8" id="yQE-cZ-mX7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Tin-Ua-CT9" id="8VL-vO-IkX"/>
+                                            <outlet property="eligibilityLabel" destination="T3Y-Q9-pYX" id="Via-vr-hga"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7LP-OX-po7" id="I6E-v9-LXY"/>
+                                    <outlet property="delegate" destination="7LP-OX-po7" id="RF7-b9-2Xz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CPh-1R-DS1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CIc-UG-ccQ" firstAttribute="leading" secondItem="CPh-1R-DS1" secondAttribute="leading" id="F5P-vV-rHL"/>
+                            <constraint firstItem="CIc-UG-ccQ" firstAttribute="bottom" secondItem="CPh-1R-DS1" secondAttribute="bottom" id="P5W-2h-IN9"/>
+                            <constraint firstItem="CPh-1R-DS1" firstAttribute="trailing" secondItem="CIc-UG-ccQ" secondAttribute="trailing" id="qr9-Hc-hmC"/>
+                            <constraint firstItem="CIc-UG-ccQ" firstAttribute="top" secondItem="jyx-am-i92" secondAttribute="top" id="xKV-uj-DvG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CIc-UG-ccQ" id="gt0-gM-azA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSr-QX-EQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="-406.47321428571428"/>
         </scene>
     </scenes>
     <resources>

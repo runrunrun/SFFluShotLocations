@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B54880A82621D05400EE6E28 /* FluShotLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54880A72621D05400EE6E28 /* FluShotLocationCellViewModel.swift */; };
+		B54880A82621D05400EE6E28 /* FacilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54880A72621D05400EE6E28 /* FacilityViewModel.swift */; };
 		B54880B42621DE7700EE6E28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B54880B62621DE7700EE6E28 /* Localizable.strings */; };
+		B55FC52A26379C6C00E9D398 /* ViewModelled.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55FC52926379C6C00E9D398 /* ViewModelled.swift */; };
+		B587D983263EEEA6003321BA /* AppointmentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587D982263EEEA6003321BA /* AppointmentCellViewModel.swift */; };
+		B587D98E263EF22B003321BA /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587D98D263EF22B003321BA /* AppointmentCell.swift */; };
 		B5E05FAE2619EA1800E2A322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FAD2619EA1800E2A322 /* AppDelegate.swift */; };
 		B5E05FB02619EA1800E2A322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FAF2619EA1800E2A322 /* SceneDelegate.swift */; };
 		B5E05FB52619EA1800E2A322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E05FB32619EA1800E2A322 /* Main.storyboard */; };
@@ -16,16 +19,15 @@
 		B5E05FBA2619EA1900E2A322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E05FB82619EA1900E2A322 /* LaunchScreen.storyboard */; };
 		B5E05FC52619EA1A00E2A322 /* SFFluShotLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FC42619EA1A00E2A322 /* SFFluShotLocationsTests.swift */; };
 		B5E05FD02619EA1A00E2A322 /* SFFluShotLocationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FCF2619EA1A00E2A322 /* SFFluShotLocationsUITests.swift */; };
-		B5E05FEA2619EAFF00E2A322 /* FluShotLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FE92619EAFF00E2A322 /* FluShotLocationsViewController.swift */; };
-		B5E05FF92619EB5800E2A322 /* FluShotLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FF82619EB5800E2A322 /* FluShotLocationDetailViewController.swift */; };
+		B5E05FEA2619EAFF00E2A322 /* FacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FE92619EAFF00E2A322 /* FacilitiesViewController.swift */; };
+		B5E05FF92619EB5800E2A322 /* FacilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FF82619EB5800E2A322 /* FacilityViewController.swift */; };
 		B5E05FFF2619EBB300E2A322 /* FluShotLocationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E05FFE2619EBB300E2A322 /* FluShotLocationDataService.swift */; };
-		B5E060072619EC3A00E2A322 /* FluShotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E060062619EC3A00E2A322 /* FluShotLocation.swift */; };
-		B5E0600C2619EDBB00E2A322 /* FluShotLocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0600B2619EDBB00E2A322 /* FluShotLocationsViewModel.swift */; };
-		B5E060142619EE1900E2A322 /* FluShotLocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E060132619EE1900E2A322 /* FluShotLocationDetailViewModel.swift */; };
+		B5E060072619EC3A00E2A322 /* FluAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E060062619EC3A00E2A322 /* FluAppointment.swift */; };
+		B5E0600C2619EDBB00E2A322 /* FacilitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0600B2619EDBB00E2A322 /* FacilitiesViewModel.swift */; };
 		B5E0601E2619EF4500E2A322 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0601D2619EF4500E2A322 /* Coordinator.swift */; };
 		B5E060262619EFB200E2A322 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E060252619EFB200E2A322 /* MainCoordinator.swift */; };
 		B5E0602C2619F07400E2A322 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0602B2619F07400E2A322 /* Storyboarded.swift */; };
-		B5E0603C2619F12D00E2A322 /* FluShotLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0603B2619F12D00E2A322 /* FluShotLocationCell.swift */; };
+		B5E0603C2619F12D00E2A322 /* FacilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0603B2619F12D00E2A322 /* FacilityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B54880A72621D05400EE6E28 /* FluShotLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationCellViewModel.swift; sourceTree = "<group>"; };
+		B54880A72621D05400EE6E28 /* FacilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityViewModel.swift; sourceTree = "<group>"; };
 		B54880B52621DE7700EE6E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B54880BA2621DE8D00EE6E28 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		B54880BB2621DE8D00EE6E28 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B54880BC2621DE8D00EE6E28 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B55FC52926379C6C00E9D398 /* ViewModelled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelled.swift; sourceTree = "<group>"; };
+		B587D982263EEEA6003321BA /* AppointmentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCellViewModel.swift; sourceTree = "<group>"; };
+		B587D98D263EF22B003321BA /* AppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
 		B5E05FAA2619EA1700E2A322 /* SFFluShotLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFFluShotLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E05FAD2619EA1800E2A322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E05FAF2619EA1800E2A322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,16 +69,15 @@
 		B5E05FCB2619EA1A00E2A322 /* SFFluShotLocationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFFluShotLocationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E05FCF2619EA1A00E2A322 /* SFFluShotLocationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFFluShotLocationsUITests.swift; sourceTree = "<group>"; };
 		B5E05FD12619EA1A00E2A322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5E05FE92619EAFF00E2A322 /* FluShotLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationsViewController.swift; sourceTree = "<group>"; };
-		B5E05FF82619EB5800E2A322 /* FluShotLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationDetailViewController.swift; sourceTree = "<group>"; };
+		B5E05FE92619EAFF00E2A322 /* FacilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesViewController.swift; sourceTree = "<group>"; };
+		B5E05FF82619EB5800E2A322 /* FacilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityViewController.swift; sourceTree = "<group>"; };
 		B5E05FFE2619EBB300E2A322 /* FluShotLocationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationDataService.swift; sourceTree = "<group>"; };
-		B5E060062619EC3A00E2A322 /* FluShotLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocation.swift; sourceTree = "<group>"; };
-		B5E0600B2619EDBB00E2A322 /* FluShotLocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationsViewModel.swift; sourceTree = "<group>"; };
-		B5E060132619EE1900E2A322 /* FluShotLocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationDetailViewModel.swift; sourceTree = "<group>"; };
+		B5E060062619EC3A00E2A322 /* FluAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluAppointment.swift; sourceTree = "<group>"; };
+		B5E0600B2619EDBB00E2A322 /* FacilitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesViewModel.swift; sourceTree = "<group>"; };
 		B5E0601D2619EF4500E2A322 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B5E060252619EFB200E2A322 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		B5E0602B2619F07400E2A322 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		B5E0603B2619F12D00E2A322 /* FluShotLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluShotLocationCell.swift; sourceTree = "<group>"; };
+		B5E0603B2619F12D00E2A322 /* FacilityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				B5E0602A2619F06400E2A322 /* Shared */,
-				B5E0601C2619EED600E2A322 /* Navigation Coordinator */,
-				B5E05FE82619EAC300E2A322 /* Network */,
-				B5E05FF42619EB0A00E2A322 /* FluShotLocations */,
+				B5E0601C2619EED600E2A322 /* Navigation */,
+				B5E05FE82619EAC300E2A322 /* Service */,
+				B5E05FF42619EB0A00E2A322 /* User Interface */,
 				B5E05FAD2619EA1800E2A322 /* AppDelegate.swift */,
 				B5E05FAF2619EA1800E2A322 /* SceneDelegate.swift */,
 				B5E05FB32619EA1800E2A322 /* Main.storyboard */,
@@ -162,9 +166,9 @@
 		B5E05FE62619EAAF00E2A322 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B5E0600B2619EDBB00E2A322 /* FluShotLocationsViewModel.swift */,
-				B54880A72621D05400EE6E28 /* FluShotLocationCellViewModel.swift */,
-				B5E060132619EE1900E2A322 /* FluShotLocationDetailViewModel.swift */,
+				B5E0600B2619EDBB00E2A322 /* FacilitiesViewModel.swift */,
+				B54880A72621D05400EE6E28 /* FacilityViewModel.swift */,
+				B587D982263EEEA6003321BA /* AppointmentCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,20 +176,20 @@
 		B5E05FE72619EABB00E2A322 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5E060062619EC3A00E2A322 /* FluShotLocation.swift */,
+				B5E060062619EC3A00E2A322 /* FluAppointment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B5E05FE82619EAC300E2A322 /* Network */ = {
+		B5E05FE82619EAC300E2A322 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				B5E05FFE2619EBB300E2A322 /* FluShotLocationDataService.swift */,
 			);
-			path = Network;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		B5E05FF42619EB0A00E2A322 /* FluShotLocations */ = {
+		B5E05FF42619EB0A00E2A322 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
 				B5E060182619EE4600E2A322 /* View */,
@@ -193,14 +197,14 @@
 				B5E05FE72619EABB00E2A322 /* Model */,
 				B5E05FE62619EAAF00E2A322 /* ViewModel */,
 			);
-			path = FluShotLocations;
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		B5E05FFD2619EB5D00E2A322 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B5E05FE92619EAFF00E2A322 /* FluShotLocationsViewController.swift */,
-				B5E05FF82619EB5800E2A322 /* FluShotLocationDetailViewController.swift */,
+				B5E05FE92619EAFF00E2A322 /* FacilitiesViewController.swift */,
+				B5E05FF82619EB5800E2A322 /* FacilityViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,24 +212,26 @@
 		B5E060182619EE4600E2A322 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5E0603B2619F12D00E2A322 /* FluShotLocationCell.swift */,
+				B5E0603B2619F12D00E2A322 /* FacilityCell.swift */,
+				B587D98D263EF22B003321BA /* AppointmentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		B5E0601C2619EED600E2A322 /* Navigation Coordinator */ = {
+		B5E0601C2619EED600E2A322 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				B5E0601D2619EF4500E2A322 /* Coordinator.swift */,
 				B5E060252619EFB200E2A322 /* MainCoordinator.swift */,
 			);
-			path = "Navigation Coordinator";
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		B5E0602A2619F06400E2A322 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				B5E0602B2619F07400E2A322 /* Storyboarded.swift */,
+				B55FC52926379C6C00E9D398 /* ViewModelled.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -362,19 +368,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5E05FF92619EB5800E2A322 /* FluShotLocationDetailViewController.swift in Sources */,
-				B5E0600C2619EDBB00E2A322 /* FluShotLocationsViewModel.swift in Sources */,
+				B5E05FF92619EB5800E2A322 /* FacilityViewController.swift in Sources */,
+				B587D98E263EF22B003321BA /* AppointmentCell.swift in Sources */,
+				B5E0600C2619EDBB00E2A322 /* FacilitiesViewModel.swift in Sources */,
+				B55FC52A26379C6C00E9D398 /* ViewModelled.swift in Sources */,
 				B5E05FAE2619EA1800E2A322 /* AppDelegate.swift in Sources */,
 				B5E060262619EFB200E2A322 /* MainCoordinator.swift in Sources */,
 				B5E05FB02619EA1800E2A322 /* SceneDelegate.swift in Sources */,
-				B5E060142619EE1900E2A322 /* FluShotLocationDetailViewModel.swift in Sources */,
 				B5E05FFF2619EBB300E2A322 /* FluShotLocationDataService.swift in Sources */,
 				B5E0602C2619F07400E2A322 /* Storyboarded.swift in Sources */,
-				B5E0603C2619F12D00E2A322 /* FluShotLocationCell.swift in Sources */,
-				B5E060072619EC3A00E2A322 /* FluShotLocation.swift in Sources */,
-				B5E05FEA2619EAFF00E2A322 /* FluShotLocationsViewController.swift in Sources */,
+				B5E0603C2619F12D00E2A322 /* FacilityCell.swift in Sources */,
+				B587D983263EEEA6003321BA /* AppointmentCellViewModel.swift in Sources */,
+				B5E060072619EC3A00E2A322 /* FluAppointment.swift in Sources */,
+				B5E05FEA2619EAFF00E2A322 /* FacilitiesViewController.swift in Sources */,
 				B5E0601E2619EF4500E2A322 /* Coordinator.swift in Sources */,
-				B54880A82621D05400EE6E28 /* FluShotLocationCellViewModel.swift in Sources */,
+				B54880A82621D05400EE6E28 /* FacilityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

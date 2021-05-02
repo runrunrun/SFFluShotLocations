@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct FluShotLocation: Decodable {
+struct FluAppointment: Decodable {
+    let facilityId: String
     let facilityName: String?
-    let facilityId: String?
     let facilityType: String?
     let street1: String?
     let city: String?

@@ -10,7 +10,7 @@ import Foundation
 final class FluShotLocationDataService {
     private let locationsURL = URL(string: "https://data.sfgov.org/resource/yg87-cd6v.json")!
 
-    func fetchLocations(_ completion: @escaping ([FluShotLocation]?, Error?) -> Void) {
+    func fetchLocations(_ completion: @escaping ([FluAppointment]?, Error?) -> Void) {
         URLSession.shared.dataTask(with: locationsURL) { (data, response, error) in
             guard let data = data, error == nil else {
                 DispatchQueue.main.sync {
@@ -22,7 +22,7 @@ final class FluShotLocationDataService {
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let locations =  try decoder.decode([FluShotLocation].self, from: data)
+                let locations =  try decoder.decode([FluAppointment].self, from: data)
                 DispatchQueue.main.sync {
                     completion(locations, nil)
                 }

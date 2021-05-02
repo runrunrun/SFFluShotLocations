@@ -16,7 +16,14 @@ final class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "FluShotLocationsViewController")
+        let vc = FacilitiesViewController.instantiate(viewModel: FacilitiesViewModel())
+        vc.coordinator = self
         self.navigationController.pushViewController(vc, animated: false)
+    }
+
+    func showFacility(_ viewModel: FacilityViewModel) {
+        let vc = FacilityViewController.instantiate(viewModel: viewModel)
+        vc.coordinator = self
+        self.navigationController.pushViewController(vc, animated: true)
     }
 }
