@@ -17,4 +17,4 @@ https://data.sfgov.org/resource/yg87-cd6v.json
 - Combine
 
 ### Demo
-![demo](/ScreenShots/sflocations.gif)
+![demo](/Screenshots/sflocations.gif)
